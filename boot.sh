@@ -31,6 +31,8 @@ docker container run \
     notes-api;
 printf "api container started --->\n"
 
+docker container exec notes-api npm run db:migrate;
+
 printf "\n"
 
 printf "all containers are up and running"
